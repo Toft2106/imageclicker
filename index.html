@@ -1,28 +1,75 @@
+script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+
 <head>
-    <title> Fodbold MEMES</title>
+
+<title>
+    Image clicker 
+</title>
+
 </head>
 
 <header>
-    <h1>velkommen til min hjemmeside</h1>
+
+<h1>
+    Antal solgte film
+</h1>
+
 </header>
 
-<button onclick="doSomething()">MESSI</button>
-<button>BoBbY Mo0rE</button>
+<button onclick="DoSomething()">antal solgte film
 
-<img width="150" heigth="300" src="https://i.ytimg.com/vi/txGabtlC6cw/hqdefault.jpg">
+</button>
 
-<select>
-<option value="NummerEt">Ronaldo er goat</option>
-<option Value="nummerTo">Ronaldo Nazario Braitwhaite</option>
-<option Value=NummerTre>Ronaldo er overvurderet </option>
-</select>
-<img wigth="300"heigth="150"src=https://www.whufc.com/sites/default/files/inline-images/Webp.net-resizeimage-7_21.jpg>
+<div class="dropdown">
+    <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+      Dropdown button
+    </button>
+    <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+      <a class="dropdown-item" href="#">Revenge of the sith</a>
+      <a class="dropdown-item" href="#">Endgame</a>
+      <a class="dropdown-item" href="#">Rain man</a>
+      <a class="dropdown-item" href="#">Rain man</a>
+    </div>
+  </div>
 
-<img width="200"heigth="200"src="https://pbs.twimg.com/media/Elg7M1DXYAEP1at.jpg">
 
+  <select onchange="select()">
+    <option>hej med dig</option>
+    <option>hej</option>
+  </select>
+  <p id="p"></p>
+  
+  <script>
+      function select() {
+        document.getElementById('p').innerHTML = "sdfjdsf"
+      }
+  </script>
+
+
+   
+<h1>Verdens bedste FIFA22 spiller</h1>
+<button onclick="dosomething('https://www.fifauteam.com/images/fifa21/icons/AshleyCole/normal.png')">1</button>
+<button onclick="dosomething('https://berlingske.bmcdn.dk/media/cache/resolve/gallery_image/image/47/477901/6281990-1995.jpg')"></button>
+<body id="body">
+
+</body>
+
+<p> 
+    <img alt="" src="" 
+        style="height: 85px; width: 198px" id="imgClickAndChange" onclick="changeImage()"  />
+</p>
 <script>
-   function doSomething() {
-       var audio = new Audio('lyd.mp3')
-       audio.play();
-   }
+
+function dosomething(url){
+    var img = document.createElement('img');
+            img.src = url;
+            document.getElementById('body').appendChild(img);
+            down.innerHTML = "Image Element Added.";
+}
+
+
 </script>
